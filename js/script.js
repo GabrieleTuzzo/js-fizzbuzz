@@ -11,13 +11,13 @@ for (let i = 0; i < 100; i++) {
     let remainder5 = num % 5
 
     // Controllo se il numero da stampare è divisibile per 3, per 5, entrambi o nessuno dei due e in base al risultato stampo rispettivamente: Fizz, Buzz, FizzBuzz o il numero stesso
-    if (remainder3 === 0 && remainder5 !== 0) {
-        console.log("Fizz!")
-    } else if (remainder3 !== 0 && remainder5 === 0) {
-        console.log("Buzz!")
+    if (remainder3 !== 0 && remainder5 !== 0) {
+        console.log(num)
     } else if (remainder3 === 0 && remainder5 === 0) {
         console.log("FizzBuzz!")
-    } else if (remainder3 !== 0 && remainder5 !== 0) {
-        console.log(num)
-    }
+    } else if (remainder3 === 0) {
+        console.log("Fizz!")
+    } else if (remainder5 === 0) {
+        console.log("Buzz!")
+    } 
 }
